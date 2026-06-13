@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    );
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.btn {
+    background: #f9a825;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pillars {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
