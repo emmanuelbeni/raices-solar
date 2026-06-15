@@ -124,11 +124,68 @@
       from {opacity: 0; transform: translateY(10px);}
       to {opacity: 1; transform: translateY(0);}
     }
+
+    /* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 40px;
+
+  background: rgba(7, 16, 24, 0.75);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  background: #22c55e;
+  color: black !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
   </style>
 </head>
 
 <body>
+<nav class="nav">
+  <div class="logo">Raíces Solar</div>
 
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#mission">Mission</a>
+    <a href="donate.html" class="nav-btn">Donate</a>
+  </div>
+</nav>
 <section class="hero">
   <h1>Powering Caribbean Farmers. Protecting Caribbean Communities.</h1>
   <p>
